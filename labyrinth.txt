@@ -1,0 +1,44 @@
+def name():
+    print("Josiah Head")
+    return name
+def game():
+    starter = "right"
+    while True:
+        print("Welcome to Adventure Game where you have to go through rooms to get to the end of the labyrinth.")
+        starter = input ("You have Entered the first room and you can ether go right or left which do you choose.")
+        starter = starter.lower()
+        if starter == "right":
+            print("You have entered a room with jewels along the wall but there is a metal door so you cant get to the jewels. So you have to find the key go back to the beginning and retry")
+          
+        elif starter == "left":
+            print("You have entered a room that has two doors, both have writing on them one says the key is here and the other says the key is not here. But one is telling the truth and one is telling a lie.")
+            door = input ("Which door do you choose?")
+            if door == "1":
+                print ("sorry you have to restart you died XD")
+                
+            elif door == "2":
+                print ("You choose door 2: Continue on to the next room you will be surpirsed")
+                
+
+                cont = input ("Do you wish to continue?")
+                if cont == "yes":
+                    print("Their is a tresure chest in th middle of the room you open it and find the key to the jewel room")
+                    tresure = input ("Do you wish to go to the tresure Room?")
+                    if tresure == "yes":
+                        print ("You Have recevied the tresure enjoy and thanks for playing my game")
+
+                    else:
+                        tresure == "no"
+                        print ("Why wouldnt you want tresure go back to the beginning and rethink your decision go back to the beginning REKT!")
+                        
+                elif cont == "no":
+                    print(" You are stuck here and you die to the walls closing in on you, RESTART HAHA!!")
+                   
+                       
+            
+        
+        else:
+            print("There is no door for that room")
+
+name()
+game()
